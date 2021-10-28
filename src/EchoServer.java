@@ -28,4 +28,9 @@ public class EchoServer {
             out.println(inputLine);
         }
     }
+
+    public static void main(String[] args) throws IOException {
+        EchoServer server = new EchoServer();
+        server.start(6666);
+    }
 }
